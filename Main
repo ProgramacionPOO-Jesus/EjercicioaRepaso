@@ -1,0 +1,79 @@
+public class Main {
+
+    public static void main(String[] args) {
+
+       /*  Persona persona1 = new Persona("Juan", 25);
+        Persona persona2 = new Persona("Juan", 25);
+        Persona persona3 = new Persona("Ana", 30);
+
+       
+        System.out.println("persona1 es igual a persona2? " + persona1.equals(persona2)); 
+        System.out.println("persona1 es igual a persona3? " + persona1.equals(persona3)); 
+
+        Estudiante estudiante = new Estudiante("Carlos", 22, "Ingeniería de Sistemas");
+
+       
+        System.out.println(estudiante.toString());
+
+        Estudiante estudiante2 = new Estudiante("Carlos", 22, "Ingeniería de Sistemas");
+
+     
+        System.out.println(estudiante2.toString());
+
+        
+        estudiante2.estudiar();
+
+        Profesor profesor = new Profesor("Dr. Gómez", 40, "Matemáticas");
+
+        
+        System.out.println(profesor.toString());
+
+       
+        profesor.trabajar();
+
+       
+
+        Persona[] personas = new Persona[3];
+        personas[0] = new Persona("Luis", 50);
+        personas[1] = new Estudiante("Carla", 22, "Ingeniería");
+        personas[2] = new Profesor("Eduardo", 40, "Matemáticas");
+
+        
+        for (Persona persona : personas) {
+            ((Profesor) persona).mostrarInformacion();  
+            if (persona instanceof Trabajador) {
+                
+                Trabajador trabajador = (Trabajador) persona;  
+                trabajador.trabajar();
+            }
+            System.out.println(); 
+
+        }*/
+
+        Profesor profesor1 = new Profesor("Dr. García", 45, "Matemáticas");
+        Profesor profesor2 = new Profesor("Dra. López", 50, "Física");
+
+        Estudiante estudiante1 = new Estudiante("Juan", 20, "Ingeniería");
+        Estudiante estudiante2 = new Estudiante("Ana", 22, "Medicina");
+        Estudiante estudiante3 = new Estudiante("Carlos", 21, "Derecho");
+
+        Curso curso1 = new Curso("Álgebra Lineal", profesor1);
+        Curso curso2 = new Curso("Mecánica Clásica", profesor2);
+
+        curso1.matricularEstudiante(estudiante1);
+        curso1.matricularEstudiante(estudiante2);
+        curso2.matricularEstudiante(estudiante3);
+
+        curso1.mostrarProfesor();
+        curso1.mostrarEstudiantes();
+        curso2.mostrarProfesor();
+        curso2.mostrarEstudiantes();
+
+        profesor1.trabajar();
+        profesor2.trabajar();
+
+    }
+        
+       
+        
+    }
